@@ -1,5 +1,7 @@
 package com.jomariabejo.payrollsystem.payroll_system.model;
 
+import java.time.LocalDate;
+
 public class Employee extends Person {
     private int employeeNumber;
     private BankNumber bankNumber;
@@ -26,15 +28,16 @@ public class Employee extends Person {
         this.allowance = new Allowance(riceSubsidy, phoneAllowance, clothingAllowance);
     }
 
-    private void login() {
-
-    }
-    private void setTimeIn() {
-
+    private boolean login(String username, String password) {
+        return false;
     }
 
-    private void setTimeOut() {
+    private void setTimeIn(String timeIn) {
+        LocalDate localDate = LocalDate.parse(timeIn);
+    }
 
+    private void setTimeOut(String timeOut) {
+        LocalDate localDate = LocalDate.parse(timeOut);
     }
 
     private void viewAccountDetails() {
